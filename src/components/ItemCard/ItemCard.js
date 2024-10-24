@@ -1,11 +1,12 @@
-import styles from './ItemCard.module.css'
+import styles from "./ItemCard.module.css"
 
-function ItemCard() {
+function ItemCard({ productName, price, description }) {
   return (
     <div className={styles.itemCard}>
-      <h1>Item discription</h1>
-      <img className='' alt='item' />
-      <article>Information about particular item</article>
+      <h3>{productName}</h3>
+      <img className='' alt='Cyber vegies!' scr='/src/photos/Tomato.jpeg' />
+      <p className={styles.discription}>{description}</p>
+      <h4>Price: {price}</h4>
       <button className={styles.addButton} type='button'>
         Add to cart
       </button>
