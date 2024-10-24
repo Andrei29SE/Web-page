@@ -1,6 +1,9 @@
 .addButton {
   margin: 5px;
   padding: 5px;
+  border-radius: 5px;
+  border-color: black;
+  background-color: hsl(160, 100%, 50%);
 }
 .itemCard > img {
   width: 100%;
